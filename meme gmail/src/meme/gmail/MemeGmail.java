@@ -34,8 +34,8 @@ public class MemeGmail {
             try {
                 mail.setFrom(new InternetAddress(correoEnvia));
                 mail.addRecipient(Message.RecipientType.TO, new InternetAddress(receptor));
-                mail.setSubject(asunto);
-                mail.setText(mensaje);
+                mail.setSubject(mensaje);
+                mail.setText(asunto);
                 
 
                 Transport transportar = sesion.getTransport("smtp");
